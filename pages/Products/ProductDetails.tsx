@@ -11,11 +11,12 @@ export const ProductDetails = () => {
       {products
         .filter((item) => item.key === id)
         .map((product) => (
-          <>
-            <li>{product.category}</li>
-            <li>{product.title}</li>
-            <li>{product.marka}</li>
-          </>
+          <div>
+            <li>{product?.category}</li>
+            <li>{product?.model}</li>
+            <li>{product?.marka}</li>
+            <li>{product?.price}</li>
+          </div>
         ))}
     </div>
   );
